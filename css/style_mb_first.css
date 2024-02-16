@@ -199,7 +199,7 @@ button{
 }
 
 .strategic .container_sm{
-    padding: 20px;
+    padding: 150px 0 60px;
 }
 
 .strategic .column_left{
@@ -276,3 +276,75 @@ button{
     
 }
 
+/* PARTNERS */
+
+.partners .container{
+    padding-top: 40px;
+}
+
+.partners .title{
+    text-align: center;
+}
+
+.partners .title h6, h2, p{
+    margin-bottom: 30px;
+}
+
+.partners h2{
+    color: #9593E5;
+}
+
+.partners .card{
+    background-color: #9593E5;
+    
+}
+
+.badge img{
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+     object-fit: cover;
+}
+
+.badge{
+    flex-shrink: 0;
+}
+
+.partners .card{
+   
+   margin: 25px 0;
+}
+
+.partners .row{
+    padding: 20px 20px;
+
+}
+
+.partners .card p, h4{
+    text-align: center;
+    color: white;
+}
+
+.badge_txt{
+    justify-content: center;
+}
+
+
+
+ @media (min-width: 768px){
+    .partners .card{
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .partners .card p, h4{
+        text-align: left;
+    }
+
+    .badge_txt{
+        justify-content: flex-start;
+    }
+
+} 
