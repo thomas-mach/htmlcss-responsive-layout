@@ -45,6 +45,20 @@ button{
     flex-wrap: wrap;
 }
 
+.col-12{
+    width: calc(12 * 100% / 12);
+}
+
+@media (min-width: 992px){
+    .col-md-8{
+        width: calc(8 * 100% / 12);
+    }
+
+    .col-md-4{
+        width: calc(4 * 100% / 12);
+    }
+}
+
 /* BUTTONS */
 
 .button{
@@ -54,6 +68,11 @@ button{
     border-radius: 999px;
     padding:  0 30px;
     display: block;
+}
+
+.button_blue{
+    background-color: #0084FD;
+    color: white;
 }
 
 /* HEADER */
@@ -73,7 +92,6 @@ button{
 .nav{
     justify-content: space-between;
     color: white;
-   
 }
 
 @media (min-width: 992px){
@@ -87,5 +105,72 @@ button{
 }
 /* HEADER END */
 
+/* HERO */
+
+.hero .container{
+    padding: 30px 0;
+}
+
+.card, .card_landscape{
+    background-color: #B5DDFF;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.card{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.hero .card p{
+    text-align: center;
+    line-height: 2em;
+}
+
+.hero .card i{
+    font-size: 60px;
+}
+
+.hero .card i, h3{
+    color: #0084FD;
+}
+
+[class^='col-']{
+    padding: 20px;
+}
+
+.card_landscape .card__body{
+    padding: 20px;
+    gap: 30px;
+}
+
+.card_landscape .card__body p{
+    line-height: 2em;
+}
+
+@media (min-width: 768px){
+    .hero .card_landscape img{
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px){
+    .card_landscape{
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
+
+    .card_landscape .card__body {
+        max-width: 50%;
+
+}
+
+.hero .card_landscape img{
+    width: 100%;
+}
+
+}
 
 
