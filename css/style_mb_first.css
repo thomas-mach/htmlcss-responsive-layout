@@ -57,7 +57,14 @@ button{
     .col-md-4{
         width: calc(4 * 100% / 12);
     }
+
+    .col-md-6{
+        width: calc(6 * 100% / 12);
+    }
+
 }
+
+
 
 /* BUTTONS */
 
@@ -73,6 +80,18 @@ button{
 .button_blue{
     background-color: #0084FD;
     color: white;
+}
+
+.button_round{
+    background-color: #9593E5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
 
 /* HEADER */
@@ -173,4 +192,87 @@ button{
 
 }
 
+/* STRATEGIC PLANNING */
+
+.strategic{
+    background-color: #9593E5;
+}
+
+.strategic .container_sm{
+    padding: 20px;
+}
+
+.strategic .column_left{
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.strategic .cards{
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.strategic .cards h2, p{
+    color: white;
+}
+
+.strategic .cards h2 {
+    color: white;
+    margin: 100px 0 30px;
+}
+
+.strategic .cards .column_left p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+}
+
+@media (min-width: 768px){
+    .strategic .cards h2{
+        font-size: 60px;
+    }
+
+}
+
+@media (min-width: 992px){
+    .strategic .cards {
+       flex-direction: row;
+       gap: 0;
+    }
+
+    .strategic .card_boy img{
+        width: 80%;
+    }
+
+    .column_right{
+        align-self: flex-end;
+    }
+
+    .card_boy{
+        margin-left: 30px;
+    }
+
+}
+
+.card_boy{
+    background-color: white;
+    border-radius: 25px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 30px;
+}
+
+.strategic .card_boy h3, p{
+    color: black;
+}
+
+.card_boy p{
+    font-style: italic;
+    text-align: center;
+    
+}
 
