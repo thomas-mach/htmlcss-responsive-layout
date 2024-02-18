@@ -8,7 +8,8 @@
 
 img{
 	max-width: 100%;
-}   
+}  
+
 
 a{
 	text-decoration: none;
@@ -49,20 +50,35 @@ button{
     width: calc(12 * 100% / 12);
 }
 
-@media (min-width: 992px){
-    .col-md-8{
-        width: calc(8 * 100% / 12);
-    }
-
+@media (min-width: 768px){
     .col-md-4{
         width: calc(4 * 100% / 12);
-    }
+    } 
 
     .col-md-6{
         width: calc(6 * 100% / 12);
+    } 
+
+    .col-md-8{
+        width: calc(8 * 100% / 12);
+    }
+}
+
+@media (min-width: 992px){
+    .col-xl-4{
+        width: calc(4 * 100% / 12);
+    }
+    
+    .col-xl-6{
+        width: calc(6 * 100% / 12);
     }
 
+    .col-xl-8{
+        width: calc(8 * 100% / 12);
+    }
 }
+
+
 
 
 
@@ -90,8 +106,11 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+}
+
+.button_viola{
+    background-color: #9593E5;
+    color: white;
 }
 
 /* HEADER */
@@ -348,3 +367,40 @@ button{
     }
 
 } 
+
+/* BENEFITS */
+
+.benefits{
+    background-color: #9593E5;
+    padding: 50px;
+}
+
+.benefits h2{
+    color: white;
+    text-align: center;
+}
+
+.benefits .cards{
+    flex-direction: column;
+}
+
+.benefits .card{
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.benefits .card h4{
+    font-size: 40px;
+    color: #9593E5;
+}
+
+.benefits .card h3{
+    font-size: 30px;
+    color: #9593E5;
+}
+
+.benefits .card p{
+    font-size: 20px;
+    line-height: 1.5em;
+}
