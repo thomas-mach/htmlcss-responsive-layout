@@ -132,6 +132,7 @@ button{
     color: white;
 }
 
+
 @media (min-width: 992px){
     .mine-menu{
         display: flex;
@@ -140,6 +141,8 @@ button{
     .hamburger{
         display: none;
     }
+
+   
 }
 /* HEADER END */
 
@@ -176,7 +179,7 @@ button{
 }
 
 [class^='col-']{
-    padding: 20px;
+    padding: 12px;
 }
 
 .card_landscape .card__body{
@@ -190,7 +193,11 @@ button{
 
 @media (min-width: 768px){
     .hero .card_landscape img{
-        width: 50%;
+        max-width: 50%;
+    }
+
+    .hero .card_header{
+        align-items: flex-end;
     }
 }
 
@@ -206,7 +213,7 @@ button{
 }
 
 .hero .card_landscape img{
-    width: 100%;
+    max-width: 100%;
 }
 
 }
@@ -218,15 +225,13 @@ button{
 }
 
 .strategic .container_sm{
-    padding: 150px 0 60px;
+    padding: 150px 24px 60px;
 }
 
 .strategic .column_left{
     align-content: center;
     justify-content: center;
 }
-
-
 
 .strategic .cards{
     align-items: center;
@@ -322,7 +327,7 @@ button{
     width: 150px;
     aspect-ratio: 1;
     border-radius: 50%;
-     object-fit: cover;
+    object-fit: cover;
 }
 
 .badge{
@@ -372,7 +377,7 @@ button{
 
 .benefits{
     background-color: #9593E5;
-    padding: 50px;
+    padding: 30px 14px;
 }
 
 .benefits h2{
@@ -391,7 +396,7 @@ button{
 }
 
 .benefits .card h4{
-    font-size: 40px;
+    font-size: 50px;
     color: #9593E5;
 }
 
@@ -403,4 +408,73 @@ button{
 .benefits .card p{
     font-size: 20px;
     line-height: 1.5em;
+}
+
+/* ABOUT US */
+.about_us{
+    padding: 50px 0;
+}
+
+.about_us .about{
+    flex-direction: column;
+}
+
+.about_us .title_txt h2{
+    color: #9593E5;
+    font-size: 40px;
+}
+
+.about_us .title_txt p{
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.about_us .foto_txt p{
+    font-size: 30px;
+    line-height: 1.5em;
+    color: #9593E5;
+}
+
+.about_us .foto_txt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.about_us .foto_txt .foto img{
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.about_us .foto_txt .foto{
+    position: relative; 
+}
+
+.about_us .foto_txt .foto::after{
+    content: '"';
+    font-size: 80px;
+    color: #9593E5;
+    position: absolute;
+    right: 13px;
+} 
+
+@media (min-width: 768px){
+    .about_us .about{
+        flex-direction: row;
+}
+
+.about_us .foto_txt{
+    align-content: flex-start;
+
+}
+
+.about_us .foto_txt .foto{
+    align-self: center;
+}
+   
+
 }
